@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso - Novo Sistema de Acesso</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 5px solid #ff6b35;
+            border-radius: 8px;
+        }
+        
+        .section h2 {
+            color: #ff6b35;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .icon {
+            font-size: 20px;
+        }
+        
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .values-table {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+        
+        .values-table .row {
+            display: flex;
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .values-table .row:last-child {
+            border-bottom: none;
+        }
+        
+        .values-table .label {
+            flex: 1;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .values-table .value {
+            color: #ff6b35;
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .footer strong {
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ffeaa7;
+            margin: 15px 0;
+        }
+        
+        .form-link {
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: center;
+            border: 2px solid #28a745;
+        }
+        
+        .form-link a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .form-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .warning {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #f5c6cb;
+            margin: 15px 0;
+        }
+        
+        .intro {
+            font-size: 16px;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        
+        .print-btn {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .print-btn:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+        }
+        
+        .placeholder-link {
+            background: #17a2b8;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: center;
+            border: 2px dashed #17a2b8;
+        }
+        
+        @media print {
+            .print-btn {
+                display: none;
+            }
+            body {
+                padding: 0;
+                font-size: 12px;
+            }
+            .header {
+                background: #ff6b35 !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚧 IMPLANTAÇÃO DO NOVO SISTEMA DE ACESSO – COLABORE!</h1>
+    </div>
+    
+    <p class="intro">
+        <strong>Prezados moradores e proprietários,</strong><br>
+        Estamos implantando um novo sistema de acesso ao condomínio com liberação por <strong>TAG, Wi-Fi e controle remoto</strong>, além de melhorias na fachada. Para que tudo funcione corretamente, pedimos a colaboração de todos.
+    </p>
+    
+    <div class="section">
+        <h2><span class="icon">🔧</span> O que será ativado até a próxima semana:</h2>
+        <ul>
+            <li><strong>Portão principal (pedestres):</strong> acesso por TAG e celular (Wi-Fi)</li>
+            <li><strong>Portões de veículos (entrada e saída):</strong> acesso por celular (Wi-Fi) e controle remoto</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2><span class="icon">📄</span> O que você precisa fazer:</h2>
+        <div class="highlight">
+            Se ainda não preencheu o formulário de atualização, pedimos que o faça o quanto antes. É necessário que <strong>uma pessoa por lote ou residência</strong> envie os dados, inclusive <strong>quem ainda não começou a construir</strong>.
+        </div>
+        
+        <div class="form-link">
+            <strong>📝 ACESSE O FORMULÁRIO DE ATUALIZAÇÃO:</strong><br>
+            <a href="https://forms.gle/YtRhUQSupNXgK7NQA" target="_blank">👉 https://forms.gle/YtRhUQSupNXgK7NQA</a><br>
+            <small>Clique no link acima para preencher seus dados</small>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2><span class="icon">💰</span> Valores mensais por cota:</h2>
+        <div class="values-table">
+            <div class="row">
+                <div class="label">Lote:</div>
+                <div class="value">R$ 100</div>
+            </div>
+            <div class="row">
+                <div class="label">Residência construída:</div>
+                <div class="value">R$ 150</div>
+            </div>
+            <div class="row" style="background: #f8f9fa;">
+                <div class="label" style="font-weight: bold;">Para quem possui mais de um lote ou residência (unificados lado a lado):</div>
+                <div class="value"></div>
+            </div>
+            <div class="row">
+                <div class="label" style="margin-left: 20px;">2 lotes juntos:</div>
+                <div class="value">R$ 150 (R$ 100 + R$ 50)</div>
+            </div>
+            <div class="row">
+                <div class="label" style="margin-left: 20px;">2 residências unificadas:</div>
+                <div class="value">R$ 225 (R$ 150 + R$ 75)</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2><span class="icon">⚠️</span> Importante:</h2>
+        <div class="warning">
+            <ul style="margin: 0;">
+                <li>Quando os <strong>lotes ou residências forem separados</strong>, ou seja, <strong>em locais diferentes do condomínio</strong>, o valor é cobrado <strong>inteiro para cada um</strong> (R$ 100 por lote separado / R$ 150 por residência separada).</li>
+                <li>A cobrança com desconto (meia cota) só se aplica a <strong>unificações lado a lado</strong>, formando um único terreno ou construção.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2><span class="icon">🤝</span> Colaboração necessária:</h2>
+        <p><strong>Contamos com a colaboração de todos os moradores e proprietários</strong> para que possamos avançar juntos nas melhorias do nosso condomínio.</p>
+    </div>
+    
+    <div class="footer">
+        <p>Atenciosamente,<br>
+        <strong>Administração – Associação Vivendas do Cachamorra</strong></p>
+    </div>
+    
+    <button class="print-btn" onclick="window.print()">🖨️ Imprimir / Salvar como PDF</button>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Documento atualizado carregado. Clique no botão para imprimir/salvar como PDF.');
+        });
+    </script>
+</body>
+</html>
